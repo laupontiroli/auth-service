@@ -25,12 +25,12 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') { 
-            steps {
-                sh 'kubectl apply -f k8s/secret.yaml'
-                sh 'kubectl apply -f k8s/service.yaml'
-                sh 'kubectl apply -f k8s/deployment.yaml'
-            }
-        }  
+        // stage('Deploy') { 
+        //     steps {
+        //         sh 'kubectl apply -f k8s/secret.yaml'
+        //         sh 'kubectl apply -f k8s/service.yaml'
+        //         sh 'kubectl apply -f k8s/deployment.yaml'
+        //     }
+        // }  
     }
 }
